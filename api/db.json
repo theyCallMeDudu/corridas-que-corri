@@ -1,0 +1,25 @@
+{
+    "corridas": [
+        {
+            "id": 1,
+            "title": "Circuito Correndo Pelo Rio - Praça Mauá",
+            "date": "18/06/2023",
+            "distance": 4,
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/corridas-que-corri-c9402.appspot.com/o/Corrida%201%2Fbanner_corrida_1.png?alt=media&token=141dd298-5545-4b89-9584-4cf0eecd65c9"
+        },
+        {
+            "id": 2,
+            "title": "Circuito RJ - 2ª etapa",
+            "date": "27/07/2023",
+            "distance": 5,
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/corridas-que-corri-c9402.appspot.com/o/Corrida%202%2Fbanner_corrida_2.png?alt=media&token=dae1c497-306e-412a-bf5e-5e0d2864529c"
+        },
+        {
+            "id": 3,
+            "title": "Circuito RJ - 3ª etapa",
+            "date": "07/09/2023",
+            "distance": 5,
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/corridas-que-corri-c9402.appspot.com/o/Corrida%203%2Fbanner_corrida_3.png?alt=media&token=57913c7d-04a0-4e4e-a02c-92dc709186df"
+        }
+    ]
+}
