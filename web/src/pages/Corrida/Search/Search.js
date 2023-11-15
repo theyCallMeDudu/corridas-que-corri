@@ -1,29 +1,12 @@
-import React, { useEffect, useState } from "react";
-import CorridaCard from "../../../components/Corrida/Card/Card";
-import axios from 'axios';
+import React from "react";
+import UIContainer from "../../../components/UI/Container/Container";
+import CorridaSearch from "../../../components/Corrida/Search/Search";
 
 const PagesCorridaSearch = () => {
-    const [corridas, setCorridas] = useState([]);
-
-    useEffect(() => {
-        axios.get('http://localhost:5000/corridas')
-            .then((response) => {
-                setCorridas(response.data);
-            });
-    }, []);
-
     return (
-        <div
-        className="App"
-        style={{
-            maxWidth: 300,
-            margin: '40px auto'
-        }}
-        >
-            {corridas.map((corrida) => (
-                <CorridaCard corrida={corrida} />
-            ))}
-        </div>
+        <UIContainer>
+            <CorridaSearch />
+        </UIContainer>
     );
 }
 
