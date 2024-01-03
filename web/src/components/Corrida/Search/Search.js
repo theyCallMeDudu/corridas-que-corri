@@ -9,13 +9,19 @@ const CorridaSearch = () => {
 
     useEffect(() => {
         const params = {};
+        
         if (search) {
             params.title_like = search;
         }
 
-        axios.get('http://localhost:5000/corridas', { params })
+        // axios.get('http://localhost:5000/corridas', { params })
+        axios.get('https://corridas-que-corri-api.firebaseapp.com/db.json', { params })
             .then((response) => {
-                setCorridas(response.data);
+                setCorridas(response.data.corridas);
+                console.log(response.data.corridas);
+            })
+            .catch((error) => {
+                console.error(error);
             });
     }, [search]);
 
@@ -30,7 +36,7 @@ const CorridaSearch = () => {
                 placeholder="Buscar"
                 value={search}
                 onChange={(evento) => setSearch(evento.target.value)} />
-            <CorridaList corridas={corridas} loading={!corridas.length} />
+                <CorridaList corridas={corridas} loading={!corridas.length} />
         </div>
     );
 }

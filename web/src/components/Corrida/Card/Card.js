@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css';
+import { Link } from 'react-router-dom';
 
 const CorridaCard = ({ corrida }) => (
     <div className='corrida-card'>
@@ -15,13 +16,7 @@ const CorridaCard = ({ corrida }) => (
             <footer className='corrida-card__footer'>
                 <span className='corrida-card__date'>{corrida.date}</span>
                 <span className='corrida-card__distance'>{corrida.distance}km</span>
-                <a 
-                    href={'https://google.com'}
-                    rel='nooperner'
-                    className='corrida-card_link'               
-                >
-                    VER MAIS
-                </a>
+                <Link to={`/corrida/${corrida.id}`}>VER</Link>
             </footer>
         </div>
     </div>
