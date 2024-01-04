@@ -28,7 +28,7 @@ const CorridaSearch = () => {
     return (
         <div className="corrida-search">
             <header className="corrida-search__header">
-                <h1>🏃‍♂️ Corridas que corri</h1>
+                <h1>🏃 Corridas que corri</h1>
             </header>
             <input
                 type="search"

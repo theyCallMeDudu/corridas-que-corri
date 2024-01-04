@@ -1,0 +1,58 @@
+.corrida-show__card {
+    border-radius: 8px;
+    border: 1px solid #C3C3C3;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: flex-start;
+}
+
+.corrida-show__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.corrida-show__profile {
+    width: 25%;
+}
+
+.corrida-show__title {
+    font-size: 26px;
+    color: #2C3E50;
+}
+
+.corrida-show__link {
+    text-decoration: none;
+}
+
+.corrida-show__info {
+    width: 70%;
+}
+
+.corrida-show__subtitle {
+    text-transform: uppercase;
+    color: #888;
+}
+
+/* Estilo para a seta da esquerda */
+.slick-prev:before {
+    color: #000; /* Modifique a cor conforme desejado */
+}
+
+/* Estilo para a seta da direita */
+.slick-next:before {
+    color: #000; /* Modifique a cor conforme desejado */
+}
+
+.corrida-show__voltar {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .corrida-show__title {
+        font-size: 18px;
+        color: #2C3E50;
+    }
+}
