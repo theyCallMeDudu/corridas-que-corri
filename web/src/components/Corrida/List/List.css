@@ -1,10 +1,9 @@
 .corrida-list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .corrida-list .corrida-card {
-    margin: 10px;
-    width: 30%;
+    width: 29%;
 }
 
 @media screen and (max-width: 767px) {

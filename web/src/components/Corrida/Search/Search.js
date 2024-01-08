@@ -9,20 +9,29 @@ const CorridaSearch = () => {
 
     useEffect(() => {
         const params = {};
-        
+    
         if (search) {
-            params.title_like = search;
+            // Utilizando uma expressão regular para buscar o termo no título da corrida
+            const regex = new RegExp(search, 'i'); // 'i' torna a busca case-insensitive
+    
+            axios.get('https://corridas-que-corri-api.firebaseapp.com/db.json')
+                .then((response) => {
+                    let corridasFiltradas = response.data.corridas.filter(corrida => regex.test(corrida.title));
+                    setCorridas(corridasFiltradas);
+                    console.log(corridasFiltradas);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        } else {
+            axios.get('https://corridas-que-corri-api.firebaseapp.com/db.json')
+                .then((response) => {
+                    setCorridas(response.data.corridas);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
         }
-
-        // axios.get('http://localhost:5000/corridas', { params })
-        axios.get('https://corridas-que-corri-api.firebaseapp.com/db.json', { params })
-            .then((response) => {
-                setCorridas(response.data.corridas);
-                console.log(response.data.corridas);
-            })
-            .catch((error) => {
-                console.error(error);
-            });
     }, [search]);
 
     return (
