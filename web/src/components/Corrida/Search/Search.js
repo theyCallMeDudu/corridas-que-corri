@@ -37,7 +37,11 @@ const CorridaSearch = () => {
     return (
         <div className="corrida-search">
             <header className="corrida-search__header">
-                <h1>🏃 Corridas que corri</h1>
+                <img
+                    className="corrida-search__logotipo" 
+                    src="https://firebasestorage.googleapis.com/v0/b/corridas-que-corri-c9402.appspot.com/o/corridas_que_corri.png?alt=media&token=81e0c8d4-ea38-4d1f-96ae-fd0151c97d97"
+                    alt="Logotipo com homem correndo de perfil e dizeres 'Corridas que corri ao' fundo"/>
+                <h1>Corridas que corri</h1>
             </header>
             <input
                 type="search"
