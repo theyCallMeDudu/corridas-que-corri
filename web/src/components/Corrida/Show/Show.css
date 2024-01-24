@@ -1,20 +1,3 @@
-/* .corrida-search__header {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    margin-bottom: 20px;
-}
-
-.corrida-search__header h1 {
-    text-transform: uppercase;
-    color: #888;
-}
-
-.corrida-search__header img {
-    width: 100px;
-    margin-right: 20px;
-} */
-
 .corrida-show__card {
     border-radius: 8px;
     border: 1px solid #C3C3C3;

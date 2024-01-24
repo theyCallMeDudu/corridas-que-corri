@@ -40,4 +40,8 @@
     .corrida-search__input {
         font-size: 14px; /* Reduzindo o tamanho da fonte para telas menores */
     }
+
+    .corrida-search__header img {
+        margin: 0;
+    }
 }
